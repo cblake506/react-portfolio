@@ -6,12 +6,22 @@ import About from './components/About';
 import Projects from './components/Projects';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About');
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
+  const changePage = () => {
+    switch (currentPage){
+      case 'Projects':
+        return <Projects />
+      default:
+        return <About />
+    }
+  }
   return (
     <div className="App">
-      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <About />
-      <Projects />
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      {changePage()}
       <Footer />
     </div>
   );
