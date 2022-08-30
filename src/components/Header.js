@@ -11,7 +11,7 @@ function Header ({ currentPage, handlePageChange }) {
                 <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a onClick={() => handlePageChange('About')}>ABOUT</a></li>
-                    <li><a onClick={() => handlePageChange('Projects')}>Projects</a></li>
+                    <li><a onClick={() => handlePageChange('Projects')}>PROJECTS</a></li>
                 </ul>
                 </div>
             </div>
