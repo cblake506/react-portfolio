@@ -12,6 +12,10 @@ p {
   margin-bottom: 45px;
 }
 
+.img-responsive{
+  display: inline
+}
+
 .bg-1 { 
   background-color: #1abc9c; /* Green */
   color: #ffffff;
