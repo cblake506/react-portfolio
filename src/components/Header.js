@@ -3,7 +3,7 @@ import React from 'react';
 function Header () {
     return (
         <nav class="navbar navbar-default" id="home">
-            {/* <div class="container">
+            <div class="container">
                 <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
@@ -19,7 +19,7 @@ function Header () {
                     <li><a href="#what">WHAT</a></li>
                 </ul>
                 </div>
-            </div> */}
+            </div>
         </nav>
     );
 }
